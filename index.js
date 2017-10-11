@@ -57,11 +57,11 @@ function insertNodeAt(index, newNodeAddress, linkedList, collection) {
 // }
 
 function deleteNodeAt(index, linkedList, collection) {
-  let previousNode;
-  let currentNode = headNode(linkedList, collection);
+  let previousNode
+  let currentNode = headNode(linkedList, collection)
   for(let i = 0; i < index; i++){
     previousNode = currentNode;
-    currentNode = next(currentNode, collection);
+    currentNode = next(currentNode, collection)
   }
-  previousNode.next = currentNode.next;
+  previousNode.next = currentNode.next
 }
